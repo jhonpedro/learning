@@ -14,11 +14,8 @@ class Stack:
     print(self.top.value)
 
   def push(self, value):
-    if(self.top == None):
-      self.top = Node(value=value, nextNode=None)
-    else:
-      newNode = Node(value=value, nextNode=self.top)
-      self.top = newNode
+    newNode = Node(value=value, nextNode=self.top)
+    self.top = newNode
 
   def pop(self):
     if(self.top == None):
@@ -42,8 +39,6 @@ newStack = Stack()
 newStack.push(1)
 newStack.push(2)
 newStack.push(3)
-
-newStack.printTop()
 
 print(newStack.pop())
 print(newStack.pop())
