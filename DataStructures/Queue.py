@@ -1,39 +1,39 @@
 class Node:
-  value = None
-  nextNode = None
+    value = None
+    nextNode = None
 
-  def __init__(self, **nodeValues):
-    self.value = nodeValues.get('value')
-    self.nextNode = nodeValues.get('nextNode')
+    def __init__(self, **nodeValues):
+        self.value = nodeValues.get('value')
+        self.nextNode = nodeValues.get('nextNode')
+
 
 class Queue:
-  next = None
+    next = None
 
-  def push(self, value):
-    newNode = Node(value=value)
-    if self.next == None:
-      self.next = newNode
-      return
-    
-    self.pushToEnd(newNode, self.next)
-      
-  def pushToEnd(self, nodeToPush, queue):
-    if(queue.nextNode == None):
-      queue.nextNode = nodeToPush
-      return
-    
-    self.pushToEnd(nodeToPush, queue.nextNode)
-  
+    def push(self, value):
+        newNode = Node(value=value)
+        if self.next == None:
+            self.next = newNode
+            return
 
-  def pop(self):
-    if(self.next == None):
-      return 'empty'
+        self.pushToEnd(newNode, self.next)
 
-    toReturn = self.next
+    def pushToEnd(self, nodeToPush, queue):
+        if(queue.nextNode == None):
+            queue.nextNode = nodeToPush
+            return
 
-    self.next = self.next.nextNode
+        self.pushToEnd(nodeToPush, queue.nextNode)
 
-    return toReturn.value
+    def pop(self):
+        if(self.next == None):
+            return 'empty'
+
+        toReturn = self.next
+
+        self.next = self.next.nextNode
+
+        return toReturn.value
 
 
 queue = Queue()
