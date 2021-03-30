@@ -51,18 +51,20 @@ class BinaryTree {
 			return 'removed'
 		}
 
-		if (nodeToEvaluate.rightNode) {
-			if (nodeToEvaluate.rightNode.value === nodeValue) {
-				nodeToEvaluate.rightNode = undefined
-				return 'removed'
-			}
+		if (
+			nodeToEvaluate.rightNode &&
+			nodeToEvaluate.rightNode.value === nodeValue
+		) {
+			nodeToEvaluate.rightNode = undefined
+			return 'removed'
 		}
 
-		if (nodeToEvaluate.leftNode) {
-			if (nodeToEvaluate.leftNode.value === nodeValue) {
-				nodeToEvaluate.leftNode = undefined
-				return 'removed'
-			}
+		if (
+			nodeToEvaluate.leftNode &&
+			nodeToEvaluate.leftNode.value === nodeValue
+		) {
+			nodeToEvaluate.leftNode = undefined
+			return 'removed'
 		}
 
 		if (nodeValue > nodeToEvaluate.value) {
