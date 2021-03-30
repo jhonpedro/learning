@@ -95,3 +95,5 @@ binaryTree.delete({ nodeValue: 2, nodeToEvaluate: binaryTree.rootNode })
 console.log(binaryTree.rootNode)
 binaryTree.delete({ nodeValue: -1, nodeToEvaluate: binaryTree.rootNode })
 console.log(binaryTree.rootNode)
+
+// fun fact: You can run this in the browser, just copy paste and use in the browser console
