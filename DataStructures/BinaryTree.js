@@ -90,10 +90,14 @@ binaryTree.push(2)
 binaryTree.push(3)
 binaryTree.push(-1)
 
-binaryTree.delete({ nodeValue: 3, nodeToEvaluate: binaryTree.rootNode })
 binaryTree.delete({ nodeValue: 2, nodeToEvaluate: binaryTree.rootNode })
-console.log(binaryTree.rootNode)
-binaryTree.delete({ nodeValue: -1, nodeToEvaluate: binaryTree.rootNode })
+// binaryTree.delete({ nodeValue: 2, nodeToEvaluate: binaryTree.rootNode })
+// binaryTree.delete({ nodeValue: -1, nodeToEvaluate: binaryTree.rootNode })
 console.log(binaryTree.rootNode)
 
 // fun fact: You can run this in the browser, just copy paste and use in the browser console
+
+// https://www.ime.usp.br/~song/mac5710/slides/06bst.pdf
+// Cool slides and futere implementation for this tree
+// My delete method just exclude all child nodes
+// In the slides from Siang Wun Song it have 3 possibilities for deleting...
