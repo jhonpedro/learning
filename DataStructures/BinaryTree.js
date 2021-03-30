@@ -68,14 +68,12 @@ class BinaryTree {
 		}
 
 		if (nodeValue > nodeToEvaluate.value) {
-			console.log('redirect to right')
 			return this.delete({
 				nodeValue,
 				nodeToEvaluate: nodeToEvaluate.rightNode,
 			})
 		}
 		if (nodeValue < nodeToEvaluate.value) {
-			console.log('redirect to left')
 			return this.delete({
 				nodeValue,
 				nodeToEvaluate: nodeToEvaluate.left,
