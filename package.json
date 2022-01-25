@@ -1,15 +1,20 @@
 {
-  "name": "testsCodility",
+  "name": "binary-three-akinator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack-cli serve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "nodemon": "^2.0.7"
+  "devDependencies": {
+    "@types/node": "^17.0.11",
+    "html-webpack-plugin": "^5.5.0",
+    "ts-loader": "^9.2.6",
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.3"
   }
 }
