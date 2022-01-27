@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-size: 32px;
+  color: white;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+html, body, #root {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(49, 49, 49);
+}
+
+#root > div {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button {
+  border: none;
+  background-color: rgb(136, 109, 236);
+  padding: 10px 20px;
+  border-radius: 15px;
+  margin: 20px 15px;
+  cursor: pointer;
+  transition: ease 300ms;
+}
+
+button:hover {
+  background-color: rgb(111, 76, 238);
+}

@@ -14,7 +14,7 @@ const config = {
 		extensions: ['.ts', '.js'],
 	},
 	module: {
-		rules: [{ test: /\.ts$/, loader: 'ts-loader' }],
+		rules: [{ test: /\.ts$/, loader: 'ts-loader' }, {test:/\.css$/, use: ['style-loader', 'css-loader']}],
 	},
 	watchOptions: {
 		poll: 1000,
