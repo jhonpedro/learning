@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-cli serve"
+    "dev": "webpack-cli serve",
+    "prod": "webpack"
   },
   "keywords": [],
   "author": "",
