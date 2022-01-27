@@ -141,7 +141,7 @@ const definitionFourthLayer: Definition[] = [
 	},
 	{
 		value: 'Rio de Janeiro',
-		currentSymbol: Symbol.for(RIGHT_IS_IN_NORTHEAST),
+		currentSymbol: Symbol.for(LEFT_IS_IN_NORTHEAST),
 		leftSymbol: null,
 		rightSymbol: null,
 	},
